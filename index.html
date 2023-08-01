@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="quizz-container">
+
+      <h2><span>Quizz </span>Culture générale</h2>
+
+      <form>
+
+        <div class="question-container">
+
+          <h3>Qui est sacré empereur de France le 2 décembre 1804 ?</h3>
+
+          <div class="anwser-container">
+
+            <div class="single-anwser">
+              <input type="radio" id="clovis" value="a" name="emperor" checked>
+              <label for="clovis">Clovis</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="abraham" value="b" name="emperor">
+              <label for="abraham">Abraham Lincoln</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="napoleon" value="c" name="emperor">
+              <label for="napoleon">Napoleon Bonaparte</label>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+
+        <div class="question-container">
+
+          <h3>Quand la déclaration d'indépendance des Etats-Unis a-t-elle été votée ?</h3>
+
+          <div class="anwser-container">
+
+            <div class="single-anwser">
+              <input type="radio" id="juillet" value="a" name="independance" checked>
+              <label for="juillet">4 juillet 1776</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="avril" value="b" name="independance">
+              <label for="avril">18 avril 1856</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="juin" value="c" name="independance">
+              <label for="juin">30 juin 1925</label>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+
+        <div class="question-container">
+
+          <h3>Quand a eu lieu la chute de l'empire romain d'occident?</h3>
+
+          <div class="anwser-container">
+
+            <div class="single-anwser">
+              <input type="radio" id="15ap-jc" value="a" name="empire" checked>
+              <label for="15ap-jc">15 ap.J.-C</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="476ap-jc" value="b" name="empire">
+              <label for="476ap-jc">476 ap.J-C</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="-740av-jc" value="c"name="empire">
+            <label for="-740av-jc">-740 av.J-C</label>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+
+        <div class="question-container">
+
+          <h3>Quelle est la capitale de la Slovénie ?</h3>
+
+          <div class="anwser-container">
+
+            <div class="single-anwser">
+              <input type="radio" id="ljubljana" value="a" name="capital" checked>
+              <label for="ljubljana">Ljubljana</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="belgrade" value="b" name="capital">
+              <label for="belgrade">Belgrade</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="bratislava" value="c" name="capital">
+              <label for="bratislava">Bratislava</label>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+
+        <div class="question-container">
+
+          <h3>Combien d'habitants compte l'Irlande en 2020 ?</h3>
+
+          <div class="anwser-container">
+
+            <div class="single-anwser">
+              <input type="radio" id="1.3m" value="a" name="civilisation" checked>
+              <label for="1.3m">1.365 Million</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="21m" value="b" name="civilisation">
+              <label for="21m">21 Millions</label>
+            </div>
+            
+            <div class="single-anwser">
+              <input type="radio" id="4.9m" value="c" name="civilisation">
+              <label for="4.9m">4.9 Milllions</label>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <button type="submit" id="send-response"> Valider</button>
+        <p class="summary-part">Cliquez sur valider pour voir les résultats.</p>
+      </form>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

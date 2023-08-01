@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Open sans, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+.quizz-container {
+  width: 100%;
+}
+
+.quizz-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+.question-container {
+  background: #f1f1f1;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 6px 0px;
+}
+
+.anwser-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-anwser {
+  display: flex;
+  margin-top: 10px;
+}
+
+.single-anwser input {
+  margin-right: 10px;
+}
+
+.single-anwser label {
+  cursor: pointer;
+}
+
+#send-response {
+  display: block;
+  width: 30%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.summary-part {
+  text-align: center;
+}
+
+.good-anwser {
+  background: rgba(9, 213, 9, 0.638);
+}
+
+.bad-anwser {
+  background: rgba(251, 31, 31, 0.613);
+}
