@@ -61,6 +61,13 @@ form {
 
 .summary-part {
   text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 2px solid black;
 }
 
 .good-anwser {

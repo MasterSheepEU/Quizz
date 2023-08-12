@@ -1,5 +1,5 @@
 const responses = ["c", "a", "b", "a", "c"];
-const emojis = ["😭", "👎", "👀", "✔️", "✨"];
+const emojis = ["😭", "👎", "👀", "✔️", "✨", "🤩"];
 const groupNames = ["emperor", "independance", "empire", "capital", "civilisation"];
 const globalForm = document.querySelector("form");
 const submitButton = document.getElementById('send-response');
@@ -32,7 +32,7 @@ const responseCheck = (indexGroup) => {
 
     } else {
 
-        allQuestionContainer[indexGroup].classList.remove()
+        allQuestionContainer[indexGroup].classList.remove("good-anwser")
         allQuestionContainer[indexGroup].classList.add("bad-anwser")
 
     }
@@ -43,7 +43,7 @@ const responseCheck = (indexGroup) => {
 
 const displayNumberGoodAnwser = () => {
 
-    // const emojis = ["😭", "👎", "👀", "✔️", "✨"];
+
 
     const goodAnwser = document.getElementsByClassName('good-anwser');
 
@@ -72,16 +72,18 @@ const displayNumberGoodAnwser = () => {
             emojiIndex = 4;
             break;
 
+        case 5:
+            emojiIndex = 5;
+            break;
+
+
         default:
 
     }
-    //il y a 6 cas pas asse d'emojis
-
-
 
     const summaryMessage = `
         <div>
-            Vous avez eu ${goodAnwser.length} sur ${totalQuestions} ${emojis[emojiIndex]}
+        ${emojis[emojiIndex]} Vous avez eu ${goodAnwser.length} sur ${totalQuestions} ${emojis[emojiIndex]}
         </div>
     `;
 
@@ -91,89 +93,12 @@ const displayNumberGoodAnwser = () => {
 
 
 
-
-
-
-
-
-
-
-
-// const displayNumberGoodAnwser = () => {
-
-//     const goodAnwser = document.getElementsByClassName('good-anwser')
-
-
-
-//     if (goodAnwser.length === 0) {
-
-//         summaryPart.innerHTML =
-//             `
-//         <div>
-
-//         Vous avez eu ${goodAnwser.length} sur ${allQuestionContainer.length} ${emojis[3]}
-
-//         </div>
-//         `
-//     } else if (goodAnwser.length === 1) {
-
-//         summaryPart.innerHTML =
-//             `
-//         <div>
-
-//         Vous avez eu ${goodAnwser.length} sur ${allQuestionContainer.length} ${emojis[4]}
-
-//         </div>
-//         `
-
-//     } else if (goodAnwser.length === 3) {
-
-//         summaryPart.innerHTML =
-//             `
-//         <div>
-
-//         Vous avez eu ${goodAnwser.length} sur ${allQuestionContainer.length} ${emojis[2]}
-
-//         </div>
-//         `
-//     } else if (goodAnwser.length === 4) {
-
-//         summaryPart.innerHTML =
-//             `
-//         <div>
-
-//         Vous avez eu ${goodAnwser.length} sur ${allQuestionContainer.length} ${emojis[0]}
-
-//         </div>
-//         `
-//     } else {
-//         (goodAnwser.length === 5)
-
-//         summaryPart.innerHTML =
-//             `
-//         <div>
-
-//         Vous avez eu ${goodAnwser.length} sur ${allQuestionContainer.length} ${emojis[1]}
-
-//         </div>
-//         `
-//     }
-// }
-
-
-
-
-
-
-
 globalForm.addEventListener('submit', (e) => {
 
     e.preventDefault()
 
     for (let i = 0; i < groupNames.length; i++) {
-
         responseCheck(i)
-
     }
 
     displayNumberGoodAnwser()
